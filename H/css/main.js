@@ -105,7 +105,7 @@ async function doJb() {
       const kpatches_u8 = new Uint8Array(kpatches_buf);
       kernel_patches(kpatches_u8);
 
-      const bin_rsp = await fetch("goldhen_2.4b18.12.bin");
+      const bin_rsp = await fetch("goldhen_2.4b18.13.bin");
       const bin_buf = await bin_rsp.arrayBuffer();
       const bin_u8 = new Uint8Array(bin_buf);
       load_bin(bin_u8);
